@@ -70,6 +70,7 @@ namespace TestProject2
                 Assert.IsTrue(consoleOutput.GetOutput().Contains("Print"));
             }
             Assert.AreEqual(currentConsoleOut, Console.Out);
+       
         }
 
         // weryfikacja, czy po wywo³aniu metody `Print` i wy³¹czonej kopiarce w napisie NIE pojawia siê s³owo `Print`
