@@ -1,6 +1,6 @@
 using System;
 
-namespace Zadanie1
+namespace Zadanie2
 {
     public interface IDevice
     {
@@ -48,6 +48,11 @@ namespace Zadanie1
         // dokument jest skanowany, jeśli urządzenie włączone
         // w przeciwnym przypadku nic się dzieje
         void Scan(out IDocument document, IDocument.FormatType formatType);
+    }
+    public interface IFax : IDevice
+    {
+        void SendFax(out IDocument document);
+        void ReceiveFax(in IDocument document);
     }
 
 }
