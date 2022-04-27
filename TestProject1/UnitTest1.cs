@@ -1,8 +1,7 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+ï»¿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Zadanie1;
 using System;
 using System.IO;
-using Xamarin.UITest;
 
 namespace Zadanie1
 {
@@ -54,7 +53,7 @@ namespace Zadanie1
         }
 
 
-        // weryfikacja, czy po wywo³aniu metody `Print` i w³¹czonej kopiarce w napisie pojawia siê s³owo `Print`
+        // weryfikacja, czy po wywoÂ³aniu metody `Print` i wÂ³Â¹czonej kopiarce w napisie pojawia siÃª sÂ³owo `Print`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Print_DeviceOn()
@@ -73,7 +72,7 @@ namespace Zadanie1
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `Print` i wy³¹czonej kopiarce w napisie NIE pojawia siê s³owo `Print`
+        // weryfikacja, czy po wywoÂ³aniu metody `Print` i wyÂ³Â¹czonej kopiarce w napisie NIE pojawia siÃª sÂ³owo `Print`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Print_DeviceOff()
@@ -92,7 +91,7 @@ namespace Zadanie1
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `Scan` i wy³¹czonej kopiarce w napisie NIE pojawia siê s³owo `Scan`
+        // weryfikacja, czy po wywoÂ³aniu metody `Scan` i wyÂ³Â¹czonej kopiarce w napisie NIE pojawia siÃª sÂ³owo `Scan`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Scan_DeviceOff()
@@ -111,7 +110,7 @@ namespace Zadanie1
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `Scan` i wy³¹czonej kopiarce w napisie pojawia siê s³owo `Scan`
+        // weryfikacja, czy po wywoÂ³aniu metody `Scan` i wyÂ³Â¹czonej kopiarce w napisie pojawia siÃª sÂ³owo `Scan`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Scan_DeviceOn()
@@ -130,7 +129,7 @@ namespace Zadanie1
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy wywo³anie metody `Scan` z parametrem okreœlaj¹cym format dokumentu
+        // weryfikacja, czy wywoÂ³anie metody `Scan` z parametrem okreÅ“lajÂ¹cym format dokumentu
         // zawiera odpowiednie rozszerzenie (`.jpg`, `.txt`, `.pdf`)
         [TestMethod]
         public void Copier_Scan_FormatTypeDocument()
@@ -159,7 +158,7 @@ namespace Zadanie1
         }
 
 
-        // weryfikacja, czy po wywo³aniu metody `ScanAndPrint` i wy³¹czonej kopiarce w napisie pojawiaj¹ siê s³owa `Print`
+        // weryfikacja, czy po wywoÂ³aniu metody `ScanAndPrint` i wyÂ³Â¹czonej kopiarce w napisie pojawiajÂ¹ siÃª sÂ³owa `Print`
         // oraz `Scan`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
@@ -179,8 +178,8 @@ namespace Zadanie1
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `ScanAndPrint` i wy³¹czonej kopiarce w napisie NIE pojawia siê s³owo `Print`
-        // ani s³owo `Scan`
+        // weryfikacja, czy po wywoÂ³aniu metody `ScanAndPrint` i wyÂ³Â¹czonej kopiarce w napisie NIE pojawia siÃª sÂ³owo `Print`
+        // ani sÂ³owo `Scan`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_ScanAndPrint_DeviceOff()
@@ -220,7 +219,7 @@ namespace Zadanie1
             copier.ScanAndPrint();
             copier.ScanAndPrint();
 
-            // 5 wydruków, gdy urz¹dzenie w³¹czone
+            // 5 wydrukÃ³w, gdy urzÂ¹dzenie wÂ³Â¹czone
             Assert.AreEqual(5, copier.PrintCounter);
         }
 
@@ -246,7 +245,7 @@ namespace Zadanie1
             copier.ScanAndPrint();
             copier.ScanAndPrint();
 
-            // 4 skany, gdy urz¹dzenie w³¹czone
+            // 4 skany, gdy urzÂ¹dzenie wÂ³Â¹czone
             Assert.AreEqual(4, copier.ScanCounter);
         }
 
@@ -279,7 +278,7 @@ namespace Zadanie1
             copier.ScanAndPrint();
             copier.ScanAndPrint();
 
-            // 3 w³¹czenia
+            // 3 wÂ³Â¹czenia
             Assert.AreEqual(3, copier.Counter);
         }
 
