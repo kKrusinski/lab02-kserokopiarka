@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zadanie3
 {
-    public class MultifunctionalDevice : BaseDevice, IFax
+    public class MultiDimensionalDevice : BaseDevice, IFax
     {
         public int PrintCounter { get; set; }
         public int ScanCounter { get; set; }
@@ -15,7 +15,7 @@ namespace Zadanie3
         public Printer Printer { get; set; }
         public Scanner Scanner { get; set; }
 
-        public MultifunctionalDevice()
+        public MultiDimensionalDevice()
         {
             Printer = new Printer();
             Scanner = new Scanner();
