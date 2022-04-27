@@ -53,7 +53,7 @@ namespace Zadanie1
         }
 
 
-        // weryfikacja, czy po wywo³aniu metody `Print` i w³¹czonej kopiarce w napisie pojawia siê s³owo `Print`
+        // weryfikacja, czy po wywołaniu metody `Print` i włączonej kopiarce w napisie pojawia się słowo `Print`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Print_DeviceOn()
@@ -72,7 +72,7 @@ namespace Zadanie1
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `Print` i wy³¹czonej kopiarce w napisie NIE pojawia siê s³owo `Print`
+        // weryfikacja, czy po wywołaniu metody `Print` i wyłączonej kopiarce w napisie NIE pojawia się słowo `Print`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Print_DeviceOff()
@@ -91,7 +91,7 @@ namespace Zadanie1
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `Scan` i wy³¹czonej kopiarce w napisie NIE pojawia siê s³owo `Scan`
+        // weryfikacja, czy po wywoŁaniu metody `Scan` i wyłączonej kopiarce w napisie NIE pojawia się słowo `Scan`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Scan_DeviceOff()
@@ -110,7 +110,7 @@ namespace Zadanie1
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `Scan` i wy³¹czonej kopiarce w napisie pojawia siê s³owo `Scan`
+        // weryfikacja, czy po wywołaniu metody `Scan` i wyłączonej kopiarce w napisie pojawia siĘ sŁowo `Scan`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Scan_DeviceOn()
@@ -129,7 +129,7 @@ namespace Zadanie1
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy wywo³anie metody `Scan` z parametrem okreœlaj¹cym format dokumentu
+        // weryfikacja, czy wywołanie metody `Scan` z parametrem określającym format dokumentu
         // zawiera odpowiednie rozszerzenie (`.jpg`, `.txt`, `.pdf`)
         [TestMethod]
         public void Copier_Scan_FormatTypeDocument()
@@ -158,7 +158,7 @@ namespace Zadanie1
         }
 
 
-        // weryfikacja, czy po wywo³aniu metody `ScanAndPrint` i wy³¹czonej kopiarce w napisie pojawiaj¹ siê s³owa `Print`
+        // weryfikacja, czy po wywo³aniu metody `ScanAndPrint` i wyłączonej kopiarce w napisie pojawiają się słowa `Print`
         // oraz `Scan`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
@@ -178,8 +178,7 @@ namespace Zadanie1
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `ScanAndPrint` i wy³¹czonej kopiarce w napisie NIE pojawia siê s³owo `Print`
-        // ani s³owo `Scan`
+        // weryfikacja, czy po wywołaniu metody `Print` i włączonej kopiarce w napisie pojawia się słowo `Print`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_ScanAndPrint_DeviceOff()
@@ -219,7 +218,7 @@ namespace Zadanie1
             copier.ScanAndPrint();
             copier.ScanAndPrint();
 
-            // 5 wydruków, gdy urz¹dzenie w³¹czone
+            // 5 wydruków, gdy urządzenie włączone
             Assert.AreEqual(5, copier.PrintCounter);
         }
 
@@ -245,7 +244,7 @@ namespace Zadanie1
             copier.ScanAndPrint();
             copier.ScanAndPrint();
 
-            // 4 skany, gdy urz¹dzenie w³¹czone
+            // 4 skany, gdy urządzenie włączone
             Assert.AreEqual(4, copier.ScanCounter);
         }
 
@@ -278,7 +277,7 @@ namespace Zadanie1
             copier.ScanAndPrint();
             copier.ScanAndPrint();
 
-            // 3 w³¹czenia
+            // 3 włączenia
             Assert.AreEqual(3, copier.Counter);
         }
 

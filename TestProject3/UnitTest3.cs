@@ -53,7 +53,7 @@ namespace TestProject3
         }
 
 
-        // weryfikacja, czy po wywo³aniu metody `Print` i w³¹czonej kopiarce w napisie pojawia siê s³owo `Print`
+        // weryfikacja, czy po wywołaniu metody `Print` i włączonej kopiarce w napisie pojawia siê słowo `Print`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Print_DeviceOn()
@@ -72,7 +72,7 @@ namespace TestProject3
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `Print` i wy³¹czonej kopiarce w napisie NIE pojawia siê s³owo `Print`
+        // weryfikacja, czy po wywołaniu metody `Print` i wyłączonej kopiarce w napisie NIE pojawia się słowo `Print`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Print_DeviceOff()
@@ -91,7 +91,7 @@ namespace TestProject3
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `Scan` i wy³¹czonej kopiarce w napisie NIE pojawia siê s³owo `Scan`
+        // weryfikacja, czy po wywołaniu metody `Scan` i wyłączonej kopiarce w napisie NIE pojawia się słowo `Scan`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Scan_DeviceOff()
@@ -110,7 +110,7 @@ namespace TestProject3
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `Scan` i wy³¹czonej kopiarce w napisie pojawia siê s³owo `Scan`
+        // weryfikacja, czy po wywołaniu metody `Scan` i wyłączonej kopiarce w napisie pojawia się słowo `Scan`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_Scan_DeviceOn()
@@ -158,7 +158,7 @@ namespace TestProject3
         }
 
 
-        // weryfikacja, czy po wywo³aniu metody `ScanAndPrint` i wy³¹czonej kopiarce w napisie pojawiaj¹ siê s³owa `Print`
+        // weryfikacja, czy po wywołaniu metody `ScanAndPrint` i wy³¹czonej kopiarce w napisie pojawiają się słowa `Print`
         // oraz `Scan`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
@@ -178,8 +178,8 @@ namespace TestProject3
             Assert.AreEqual(currentConsoleOut, Console.Out);
         }
 
-        // weryfikacja, czy po wywo³aniu metody `ScanAndPrint` i wy³¹czonej kopiarce w napisie NIE pojawia siê s³owo `Print`
-        // ani s³owo `Scan`
+        // weryfikacja, czy po wywołaniu metody `ScanAndPrint` i wyłączonej kopiarce w napisie NIE pojawia się słowo `Print`
+        // ani słowo `Scan`
         // wymagane przekierowanie konsoli do strumienia StringWriter
         [TestMethod]
         public void Copier_ScanAndPrint_DeviceOff()
